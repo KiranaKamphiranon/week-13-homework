@@ -1,10 +1,10 @@
 #include "MU_Person.h"
 
-class student:public MU_person,Thai_person{
+class student: public MU_person,public Thai_person{
 private:
           double gpa; // id + name
 public:
-    student(long=111 ,double=2.5,string="Nattawut",int=0);
+    student(long=111 ,double=2.5,string="Nattawut",int=121212);
     ~student();
     void display(); // display_person
    
@@ -15,6 +15,7 @@ student::student(long i, double g, string s, int n):MU_person(i,s),Thai_person(n
           //id=i; //private ของ MUperson
           gpa=g;  
          cout<<"MU student constructor  "<<gpa<<endl;
+        cout<<"============="<<endl;
           //name=s; //protected
   
 }
@@ -33,6 +34,6 @@ void student::display(){
   display_person(); 
   //cout<<"id:"<<id<<endl;
   //cout<<"name:"<<name<<endl;
-  cout<<"GPA:"<<gpa<<endl;
   display_natid();
+  cout<<"GPA:"<<gpa<<endl;
 }
