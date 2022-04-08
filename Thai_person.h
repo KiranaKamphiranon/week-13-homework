@@ -1,4 +1,4 @@
-//#include "student.h"
+
 class Thai_person{
 	private: 
 		long nat_id;

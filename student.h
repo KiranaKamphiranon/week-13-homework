@@ -1,6 +1,5 @@
 #include "MU_Person.h"
 
-
 class student:public MU_person,Thai_person{
 private:
           double gpa; // id + name
